@@ -5,9 +5,7 @@ if (thisIsANewVariable === 10) {
     // code block
 }
 // #### Exercise 2: Defining Core Data Types
-// Examples of the main JS primitive types: number, string, float, boolean
-let currentScore = 95;
-let messageTo = "Hello World";
+// Examples of the main JS primitive types: string (template), float, boolean
 let messageTo = `Hello World`;
 let numberFloat = 1.6;
 let isAnimal = true;
@@ -17,9 +15,6 @@ let currentScore = 95; // Current score the player has accumulated throughout th
 // == checks value only (type coercion), === checks value AND type
 console.log("100" == 100);   // true
 console.log("100" === 100);  // false
-
-console.log("100" == 100);
-console.log("100" === 100);
 // #### Exercise 5: Ternary Operator
 // Shorthand for if/else: condition ? valueIfTrue : valueIfFalse
 let isWeekend = false;
@@ -34,7 +29,6 @@ if (userAge >= 18) {
     console.log("Access Denied");
 }
 // #### Exercise 7: Logical AND Operator
-// Write an `if` statement using the **AND operator (`&&`)**. The code block should only execute if **both** `hasPermission` is `true` AND `itemCount` is less than 5. If both are true, log `"Ready to process"`.
 // Both conditions must be true for the block to run
 let hasPermission = true;
 let itemCount = 3;
@@ -42,7 +36,6 @@ if (hasPermission && itemCount < 5) {
     console.log("Ready to process");
 }
 // #### Exercise 8: For Loop
-//Write a standard **`for` loop** that runs exactly 5 times. Inside the loop, log the current iteration number (starting from 1).
 // Loops from 1 through 5, logging each number
 for (let i = 1; i <= 5; i++) {
     console.log(i);
@@ -57,7 +50,6 @@ for (let i = 0; i <= 9; i++) {
 }
 // #### Exercise 10: Ensuring Execution
 // do...while runs the block at least once, even if the condition is false
-let loopCounter = 10;
 let counter = 10;
 do {
     console.log("Running once");
@@ -76,8 +68,7 @@ fruitList.push('Grape');
 fruitList.shift();
 console.log(fruitList.indexOf('Banana'));
 // #### Exercise 13: Array Copying
-// slice() with no arguments creates a shallow copy of the array
-// slice() performs a shallow copy. For an array of primitives like this one, that means
+// slice() performs a SHALLOW copy. For an array of primitives like this one, that means
 // clonedData is fully independent of originalData. However, if the array contained nested
 // objects or arrays, both copies would still share references to those inner items —
 // modifying a nested object through one would affect the other.
